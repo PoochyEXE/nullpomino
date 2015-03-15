@@ -1,0 +1,30 @@
+#summary Nullpomino Garbage System
+
+=Line clears=
+
+|| || *T-spin only* || *All spin* ||
+|| *Single* || 0 || 0 ||
+|| *Double* || 1 || 1 ||
+|| *Triple* || 2 || 2 ||
+|| *Four* || 4 || 4 ||
+|| *Spin Mini Single* || 1 || 0 ||
+|| *Spin Single* || 2 || 2 ||
+|| *Spin Double* || 4 || 4 ||
+|| *Spin Triple* || 6 || 6 ||
+|| *Spin Mini Double* || 4 || 3 ||
+|| *EZ Spin* || 1 || 0 ||
+
+=Combo=
+
+|| *combo* || 0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9 || 10 || 11+ ||
+|| *lines send* || 0 || 0 || 1 || 1 || 2 || 2 || 3 || 3 || 4 || 4 || 4 || 5 ||
+
+=Back to back=
+
+|| || *T-spin only* || *All spin* ||
+|| *T-spin Triple* || 2 || 1 ||
+|| *other* || 1 || 1 ||
+
+=All Clear=
+
+|| 6 ||

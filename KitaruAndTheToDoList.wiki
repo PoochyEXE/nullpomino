@@ -1,0 +1,57 @@
+#summary Kitaru's list of to-dos
+
+= Introduction =
+
+I figured I should compile a running list of stuff I wanted to work on or thought should be included at some point.
+
+
+= Details =
+
+User request list:
+  * ~~attack/line ratio on the stats page~~
+  * ~~make Fractional Garbage in 3P+ default~~ ~~(Current default: Reduced)~~ (Current default: Fractional with Divide Change Rate? We're getting somewhere, I guess. Down with Target System! :p)
+  * ~~option to swap roles of Up/Down without reconfiguring controls or tuning a .rul file~~
+  * themes
+  * ~~higher resolutions for windowed mode~~ (NoName hit this one a while go. The current implementation just scales and filters, but that works for now.)
+  * Tetrominoes Per Minute display in stats page (toggle option...?)
+  * ~~bigger side previews (requires redesign of some screen layouts)~~ (Thanks again to NoName!)
+  * option for fixed location previews in the well
+  * ~~option to tone down line clear effect rather than remove it outright~~ (NoName is picking off community requests one by one, haha. :D )
+  * move playfields closer together in 1v1 layout
+  * Instant left/right keys? Double left/right macro?
+
+My list:
+  * TGM garbage
+    * ~~Field will store copy of rows cleared in the last line clear action.~~
+    * ~~BLOCK_ATTRIBUTE_LAST_COMMIT (tentative name) will mark blocks that were committed to the field on the last lockdown or cascade.~~
+    * ~~Function that generates TGM garbage rows will remove the blocks committed that caused the line clear.~~
+    * Pending garbage storage in Field.
+      * Integration of other garbage types into pending garbage field.
+        * Methods to queue, counter and add pending garbage rows to the field.
+      * Option to display pending garbage below the field (as in TGM3 etc.)
+    * Netmessage send/receive modifications to support new garbage functions.
+      * Use rowToString() on TGM garbage rows and send them across?
+  * adjustable garbage tables, hidden away in some Advanced tab
+  * a similar Advanced menu for things like scoring behaviors in Score Race and Ultra?
+  * eventually, speed curve import for Netplay Versus -- say, for things like Shirase Versus with TGM level up, NES Versus with its own speed curve and level up system, etc.
+      * Of that token, an abstraction of the speed curve system to consolidate some of the existing mode copy-paste. The tricky part is probably going to be deciding on a clean way to handle the progression systems of different games.
+  * Versus Items?
+  * varying garbage behaviors depending on type of clear (i.e. random on normals, TGM garbage on twists, etc.)
+  * "Pressure" garbage -- a subsection of the garbage meter that is added gradually
+  * quick rotation rule change menu for Netplay etc.
+  * ~~Zero ARE, Line ARE, and Line Clear in multiplayer, Line Race, etc. by default.~~
+  * rule system overhaul -- see below
+     * Once Renderer refactor is sufficiently complete, I'd like to start decoupling Tuning Options from the pool of Engine variables. From there, I'll try to prototype some rule/tuning "patching" system.
+  * ~~gametype tags for rules -- Some rules should be prevented from displaying in inappropriate menus. We don't really need to see Avalanche rules in the Tetromino menu.~~ (Thanks NoName.)
+
+= My Thoughts on the Rule System =
+
+I don't think rules should be in charge of as many things as they are. That some ignore ARE, Clear, etc. and that some don't sort of complicates things. There are mixed standards when it comes to the variety of modes. In order to promote uniformity of options, I feel that rules should not have any power over these sort of things. Instead, these options should be relegated to a tab of the Tuning menu.
+
+In light of the above, I also feel I should bring up the point that some modes should probably have a flag that prevents overrides by default. For example, Retro Marathon should ignore DAS adjustments unless you are in a special Custom mode -- more on that in just a moment.
+
+~~I believe that some single player modes should have officially supported rules. Modes that attempt to clone a particular mode should have options to use the intended rule, as well as a Custom option to use the selected rule instead. (i.e. Grade Mania 3's rule menu would sport Classic3, Standard-Hard, and Custom.)~~ (Thanks NoName.)
+
+~~It may also be beneficial to allow for separate default configurations with each rule. For example, Classic and Standard rules should have their appropriate torikans by default rather than share one setting.~~ (Thanks NoName. Speed Mania 2 now has the torikans to match the rule in use, which was the main purpose of this feature.)
+
+At any rate, removing the authority over certain settings from the rules themselves will reduce the number of rules we need in the menu. Cutting down on rule bloat means this menu will be much less daunting, for newcomer and experienced users alike.

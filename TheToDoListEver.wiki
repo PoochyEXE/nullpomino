@@ -1,0 +1,31 @@
+#summary I accidentally the whole to-do list.
+
+= Introduction =
+
+!NullpoMino 8 is a long way off. People need to do things. This is what needs to be done.
+
+If you want to claim an item, stick your name next to it. These have to get done, though.
+
+= Details =
+
+== Basic UI ==
+
+  * Integrate Nifty (!NoName?)
+  * Decide menu order and layout (gif)
+
+== Game framework ==
+
+  * New rule system (Kitaru)
+  * Revamp modes
+    * Abstract speed curve
+    * Abstract scoring formulae
+  * Item framework and abstract item behaviors
+
+== NEURO ==
+
+  * Integrate Nifty for plugins (Zircean)
+  * Create NEURO Full GUI (Zircean)
+
+== Netcode ==
+
+  * Specify and implement protocol (myndzi?, Zircean)

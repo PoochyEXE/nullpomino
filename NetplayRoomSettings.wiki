@@ -1,0 +1,103 @@
+#summary settings for current rooms, tournament rooms, suggested rooms
+
+== Legend ==
+{{{
+✓ Yes
+✗ No
+- Not applicable
+? Unconfirmed / uncertain
+}}}
+
+= Default rooms =
+|| Game                       || *TOJ* || *Blockbox* || *All-Spins* ||
+|| Bonus Options              ||
+|| Spin bonus                 || T-Spin || Disabled || All-Spins ||
+|| Spin type                  || 4-Point || - || Immobile ||
+|| EZ                         || - || - || ✓ ||
+|| B2B                        || ✓ || ✓ || ✓ ||
+|| Combo                      || ✓ || ✗ || ✓ ||
+|| All Clear                  || ✓ || ✗ || ✓ ||
+|| Garbage Options            ||
+|| Garbage change percent     || 100% || 100% || 100% ||
+|| Change garbage per attack  || ✓ || ✗ || ✓ ||
+|| Divide hole change rate    || ✓ || ✗ || ✓ ||
+|| Change B2B garbage         || ✗ || ✗ || ✗ ||
+|| Garbage blocking           || ✓ || ✗ || ✓ ||
+|| Garbage countering         || ✓ || ✗ || ✓ ||
+|| Reduce attack power in 3P+ || ✗ || ✗ || ✗ ||
+|| Use fractional garbage     || ✓ || ✓ || ✓ ||
+
+ 
+= Current tournament rooms =
+|| Game                       || *Type A* || *Type B* || *Type C* || *Type D* || *Type E* || *2v2* ||
+|| Bonus Options              ||
+|| Spin bonus                 || T-Spin || All-Spins || Disabled || Disabled || Disabled || All-Spins ||
+|| Spin type                  || 4-Point|| Immobile || - || - || - || Immobile ||
+|| EZ                         || - || ✓ || - || - || - || ✓ ||
+|| B2B                        || ✓ || ✓ || ✗ || ✓ || - || ✓ ||
+|| Combo                      || ✓ || ✗ || ✓ || ✗ || ✗ || ✓ ||
+|| All Clear                  || ✓ || ✓ || ✗ || ✗ || ✗ || ✓ ||
+|| Garbage Options            ||
+|| Garbage change percent     || 100% || 100% || 100% || 100% || 100% || 100% ||
+|| Change garbage per attack  || ✓ || ✓ || ✓ || ✗ || ✗ || ✓ ||
+|| Divide hole change rate    || - || - || - || - || - || ✗? ||
+|| Change B2B garbage         || ✗ || ✗ || ✗ || ✗ || ✗ || ✗ ||
+|| Garbage blocking           || ✓ || ✓ || ✓ || ✓ || ✗ || ✓ ||
+|| Garbage countering         || ✓ || ✓ || ✓ || ✗ || ✗ || ✓ ||
+|| Reduce attack power in 3P+ || - || - || - || - || - || ✗? ||
+|| Use fractional garbage     || - || - || - || - || - || ✗? ||
+|| *Other Options*            ||
+|| Ruleset                    || HDTL_ABC || HDTL_ABC || HDTL_ABC || HDTL_D || HDTL_E || - ||
+
+NullpoMino Tetris League uses the default TOJ settings (see above).
+
+ 
+= Suggested defaults =
+
+ 
+=== Spin Modes ===
+|| Game                       || *T-Spin 2P* || *T-Spin 6P* || *T-Spin 6P Fast* || *All-Spins 2P* || *All-Spins 6P* || *All-Spins 6P Fast* ||
+|| Bonus Options              ||
+|| Spin bonus                 || T-Spin || T-Spin || T-Spin || All-Spins || All-Spins || All-Spins ||
+|| Spin type                  || 4-Point || 4-Point || 4-Point || Immobile || Immobile || Immobile ||
+|| EZ                         || - || - || - || ✓ || ✓ || ✓ ||
+|| B2B                        || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| Combo                      || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| All Clear                  || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| Garbage Options            ||
+|| Garbage change percent     || 90% || 90%? || 90% || 100%? || 100%? || 100%? ||
+|| Change garbage per attack  || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| Divide hole change rate    || - || ✓ || ✗ || - || ✓ || ✗ ||
+|| Change B2B garbage         || ✗ || ✗ || ✗ || ✗? || ✗? || ✗? ||
+|| Garbage blocking           || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| Garbage countering         || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ ||
+|| Reduce attack power in 3P+ || ✗ || ✗ || ✗ || ✗ || ✗ || ✗ ||
+|| Use fractional garbage     || - || ✓ || ✗ || - || ✓ || ✗ ||
+|| *Other options*            ||
+|| Hurryup Seconds            || -1 || 180 || 120? || -1 || 180 || 120? ||
+
+ 
+=== Pure Modes ===
+|| Game                       || *Pure* || *Neo-Pure* ||
+|| Bonus Options              ||
+|| Spin bonus                 || Disabled || Disabled ||
+|| Spin type                  || - || - ||
+|| EZ                         || - || - ||
+|| B2B                        || ✗ || ✓? ||
+|| Combo                      || ✗ || ✗ ||
+|| All Clear                  || ✗ || ✗ ||
+|| Garbage Options            ||
+|| Garbage change percent     || 90% || 100% ||
+|| Change garbage per attack  || ✗ || ✗ ||
+|| Divide hole change rate    || ✗ || ✗ ||
+|| Change B2B garbage         || - || - ||
+|| Garbage blocking           || ✗ || ✗ ||
+|| Garbage countering         || ✗ || ✗ ||
+|| Reduce attack power in 3P+ || ✗ || ✗ ||
+|| Use fractional garbage     || ✗ || ✓ ||
+|| *Other options*            ||
+|| Hurryup Seconds            || -1 || -1 ||
+|| Notes                      || Instant garbage || ||
+
+== Other rooms ==
+* 20G VS (ARS)

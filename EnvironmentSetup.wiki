@@ -1,0 +1,77 @@
+#Setting up NullpoMino development enviroment
+
+= Goal =
+
+This is for setting up a NullpoMino development in Eclipse. Any environment can be used, this guide is only a guideline for people who are not comfortable with setting up environments.
+
+= Installing the tools =
+
+ * Download [http://www.eclipse.org/downloads/ Eclipse IDE for Java Developers] 
+ * Be sure to have java 1.6 or higher, to be sure type "java -version" on the command line
+
+= Getting the source =
+
+There are 2 ways to get the code, you can get it manually and import it in eclipse, or you can checkout a java project right from the svn.
+
+To checkout a java project from SVN, first install an SVN plugin in Eclipse:
+ * go to help -> eclipse market place
+ * choose subclipse or subversive as plugin, it will restart eclipse
+ * if prompted to install a connector, do so, install the native and the javahl one (second is pure java but you can fall back if  the native doesn't work for some reason)
+ * go to window -> show view -> other -> svn -> svn repositories
+ * right click -> new -> repository location
+ * give credentials and url as you can find here: http://code.google.com/p/nullpomino/source/checkout
+ * when you added the svn, right click and checkout as java project, that should be good
+
+To do it manually:
+ * Check out the code as described here http://code.google.com/p/nullpomino/source/checkout
+ * Create a new java project in Eclipse
+ * import the code with file -> import or just copy paste the code in your explorer and hit refresh on your project in eclipse
+
+= Configuring your project =
+
+You should now have a java project with a lot of errors in it.
+
+To configure your project:
+
+ * right click your project, build path -> configure build path
+http://i.imgur.com/MX1Mk.png
+ * in the source tab, add the src folder as source folder if this isn't the case yet, the output folder is normally bin
+http://i.imgur.com/zxRfP.png
+ * in the libraries tab, add every .jar file in the lib directory
+http://i.imgur.com/8E0OV.png
+
+= Running your project =
+
+To run the project you:
+ * click right next to the "play" button to open the dropdown menu.
+ * Choose Run Configurations...
+http://i.imgur.com/6hb6P.png
+ * Create a new Java Application:
+  * Name: NullpoMinoSlick
+  * Project: NullpoMino
+  * Main class: mu.nu.nullpo.gui.slick.NullpoMinoSlick
+http://i.imgur.com/AFu6c.png
+
+  * Arguments -> VM Arguments:
+
+{{{
+-Dorg.lwjgl.librarypath=/Projects/YourPath/NullPomino/data/lib -Dorg.lwjgl.opengl.Display.allowSoftwareOpenGL=false -Djava.library.path=/Projects/YourPath/NullPomino/data/lib -Xmx512m
+}}}
+
+http://i.imgur.com/AiwdB.png
+
+Change the paths according to your system and your NullpoMino directory (/Projects/... is linux/mac).
+
+= Finding errors =
+
+*To find errors while building your project* 
+
+(auto build with red icons everywhere), you can see the Errors in the Problem tab in Eclipse on the bottom. Ignore warnings as the project is full of warnings when you use a jdk > 1.5
+
+*To debug*
+
+Just put breakpoints by clicking left to the line you want to stop and run in debug mode by using the bug icon instead of the play icon
+
+*To see the log file*
+
+If you want to see the log file for diagnostic info you can find it in the /logs directory. For problems with slick you can look at the slick_log.txt

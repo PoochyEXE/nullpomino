@@ -1,0 +1,19 @@
+#summary NullpoMino maps
+
+=Set 0=
+http://img266.imageshack.us/img266/5054/0map.png
+=Set 1=
+http://img683.imageshack.us/img683/2817/1map.png
+=Set 2=
+http://img64.imageshack.us/img64/4853/2map.png
+=Set 3=
+http://img146.imageshack.us/img146/3091/3mapa.png
+=Set 4=
+http://img98.imageshack.us/img98/4815/4map.png
+=Set 5=
+http://img141.imageshack.us/img141/8183/5map.png
+=Set 6=
+http://img404.imageshack.us/img404/1928/6map.png
+=Set 7=
+http://img522.imageshack.us/img522/8191/7map.png
+
